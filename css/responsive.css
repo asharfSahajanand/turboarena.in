@@ -277,10 +277,6 @@
         padding: 9px 38px 9px 12px;
     }
     
-    .search_box button {
-        width: 35px;
-        height: 35px;
-    }
     
     .nav ul {
         flex-direction: column;
@@ -376,10 +372,6 @@
         padding: 8px 36px 8px 10px;
     }
     
-    .search_box button {
-        width: 32px;
-        height: 32px;
-    }
     
     .title {
         font-size: 16px;
@@ -515,9 +507,9 @@ img {
 
 /* Touch-friendly spacing for mobile */
 @media (max-width: 767px) {
-    a, button, input, select, textarea {
+    /* a,  input, select, textarea {
         min-height: 44px;
-    }
+    } */
     
     .box_one a,
     .box_two a {
