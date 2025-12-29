@@ -1453,3 +1453,94 @@ width: 60%
 body.menu-open {
   overflow: hidden !important;
 }
+
+/* ------------------------- */
+/* Mobile view mein game_box ke ads ko move karna */
+
+@media (max-width: 768px) {
+    /* Game box ke andar wale original ad_box ko hide karna */
+    .game_box .ad_box {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* Section ko flex container banana */
+    .section {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Navigation ki position */
+    /* .navigation {
+        order: -1 !important;
+        margin-bottom: 15px !important;
+    } */
+
+    /* Mobile ads container - navigation ke baad */
+    .mobile_ads_top {
+        /* order: 2 !important; */
+        display: block !important;
+        width: 100% !important;
+        background-color: #ffffff !important;
+        padding: 15px !important;
+        margin: 0 0 20px 0 !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+        text-align: center !important;
+    }
+
+    .mobile_ads_top .ad_content {
+        width: 100% !important;
+        max-width: 336px !important;
+        height: 280px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: #f9f9f9 !important;
+        border-radius: 4px !important;
+    }
+
+    .mobile_ads_top .ad_content > div {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .mobile_ads_top p {
+        margin-top: 10px !important;
+        font-size: 12px !important;
+        color: #999 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 1px !important;
+    }
+
+       /* .section .public_box:first-of-type {
+        order: 2 !important;
+        margin-bottom: 20px !important;
+    } */
+
+    /* Baaki public_box normal rahe */
+    .section .public_box:not(:first-of-type) {
+        order: unset !important;
+    }
+
+    /* Additional mobile styling */
+    .section {
+        padding: 10px !important;
+    }
+
+    .game {
+        padding: 15px !important;
+    }
+}
+
+/* Desktop view - mobile ads hide */
+@media (min-width: 769px) {
+    .mobile_ads_top {
+        display: none !important;
+    }
+}
